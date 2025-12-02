@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="5" failures="0" name="runner.RunnerTest" time="0.126" errors="1" skipped="0">
+  <properties>
+    <property name="jansi.mode" value="force"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="21.0.9+10-Ubuntu-124.04"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/davinepomuceno/Documents/Analise de Sistemas/Rafa/Projeto A3/BDD/bdd"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/davinepomuceno/Documents/Analise de Sistemas/Rafa/Projeto A3/BDD/bdd"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="21.0.9+10-Ubuntu-124.04"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/usr/share/maven/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="65.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.14.0-36-generic"/>
+    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
+    <property name="user.home" value="/home/davinepomuceno"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="21"/>
+    <property name="user.name" value="davinepomuceno"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.home" value="/usr/lib/jvm/java-21-openjdk-amd64"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="21.0.9"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-21"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+  </properties>
+  <testcase classname="Pedidos na hamburgueria Peppa Lanches" name="Pedido simples de item existente" time="0.067"/>
+  <testcase classname="Pedidos na hamburgueria Peppa Lanches" name="Pedido de item inexistente" time="0.042">
+    <error message="The step &apos;que o cliente procura por &quot;Risoto&quot;&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@Dado(&quot;que o cliente procura por {string}&quot;)
+public void queOClienteProcuraPor(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step &apos;que o cliente procura por &quot;Risoto&quot;&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@Dado(&quot;que o cliente procura por {string}&quot;)
+public void queOClienteProcuraPor(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</error>
+    <system-out>
+@hamburgueria @inexistente
+Cenário: Pedido de item inexistente                                      &amp;#27;[90m# src/test/resources/features/pedidos.feature:23&amp;#27;[0m
+  &amp;#27;[32mDado &amp;#27;[0m&amp;#27;[32mque o cardápio contém os itens:&amp;#27;[0m                                   &amp;#27;[90m# steps.PedidoSteps.que_o_cardapio_contem_os_itens(io.cucumber.datatable.DataTable)&amp;#27;[0m
+    | item         | preco |
+    | x-bacon      | 25.00 |
+    | x-salada     | 22.00 |
+    | batata frita | 12.00 |
+  &amp;#27;[33mDado &amp;#27;[0m&amp;#27;[33mque o cliente procura por &quot;Risoto&quot;&amp;#27;[0m
+  &amp;#27;[36mEntão &amp;#27;[0m&amp;#27;[36mo sistema deve exibir a mensagem &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Item indisponível no cardápio&quot;&amp;#27;[0m &amp;#27;[90m# steps.PedidoSteps.o_sistema_deve_exibir_a_mensagem(java.lang.String)&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Pedidos na hamburgueria Peppa Lanches" name="Pedido com quantidade inválida" time="0.006"/>
+  <testcase classname="Pedidos na hamburgueria Peppa Lanches" name="Pedido com desconto de 10 por cento" time="0.004"/>
+  <testcase classname="Pedidos na hamburgueria Peppa Lanches" name="Calcular tempo estimado de preparo" time="0.007"/>
+</testsuite>
