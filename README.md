@@ -1,4 +1,4 @@
-<h1 align="center" style="font-weight: bold;">E-Supply - Sistema de Gestão</h1>
+<h1 align="center" style="font-weight: bold;">BDD - Hamburgueria</h1>
 
 <p align="center">
  <a href="#info">Informações</a> • 
