@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="runner.RunnerTest" time="0.126" errors="1" skipped="0">
+<testsuite tests="5" failures="0" name="runner.RunnerTest" time="0.098" errors="0" skipped="0">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -58,39 +58,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
   </properties>
-  <testcase classname="Pedidos na hamburgueria Peppa Lanches" name="Pedido simples de item existente" time="0.067"/>
-  <testcase classname="Pedidos na hamburgueria Peppa Lanches" name="Pedido de item inexistente" time="0.042">
-    <error message="The step &apos;que o cliente procura por &quot;Risoto&quot;&apos; is undefined.
-You can implement this step using the snippet(s) below:
-
-@Dado(&quot;que o cliente procura por {string}&quot;)
-public void queOClienteProcuraPor(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step &apos;que o cliente procura por &quot;Risoto&quot;&apos; is undefined.
-You can implement this step using the snippet(s) below:
-
-@Dado(&quot;que o cliente procura por {string}&quot;)
-public void queOClienteProcuraPor(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-</error>
-    <system-out>
-@hamburgueria @inexistente
-Cenário: Pedido de item inexistente                                      &amp;#27;[90m# src/test/resources/features/pedidos.feature:23&amp;#27;[0m
-  &amp;#27;[32mDado &amp;#27;[0m&amp;#27;[32mque o cardápio contém os itens:&amp;#27;[0m                                   &amp;#27;[90m# steps.PedidoSteps.que_o_cardapio_contem_os_itens(io.cucumber.datatable.DataTable)&amp;#27;[0m
-    | item         | preco |
-    | x-bacon      | 25.00 |
-    | x-salada     | 22.00 |
-    | batata frita | 12.00 |
-  &amp;#27;[33mDado &amp;#27;[0m&amp;#27;[33mque o cliente procura por &quot;Risoto&quot;&amp;#27;[0m
-  &amp;#27;[36mEntão &amp;#27;[0m&amp;#27;[36mo sistema deve exibir a mensagem &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Item indisponível no cardápio&quot;&amp;#27;[0m &amp;#27;[90m# steps.PedidoSteps.o_sistema_deve_exibir_a_mensagem(java.lang.String)&amp;#27;[0m
-</system-out>
-  </testcase>
-  <testcase classname="Pedidos na hamburgueria Peppa Lanches" name="Pedido com quantidade inválida" time="0.006"/>
-  <testcase classname="Pedidos na hamburgueria Peppa Lanches" name="Pedido com desconto de 10 por cento" time="0.004"/>
-  <testcase classname="Pedidos na hamburgueria Peppa Lanches" name="Calcular tempo estimado de preparo" time="0.007"/>
+  <testcase classname="Pedidos na hamburgueria Peppa Lanches" name="Pedido simples de item existente" time="0.061"/>
+  <testcase classname="Pedidos na hamburgueria Peppa Lanches" name="Pedido de item inexistente" time="0.007"/>
+  <testcase classname="Pedidos na hamburgueria Peppa Lanches" name="Pedido com quantidade inválida" time="0.01"/>
+  <testcase classname="Pedidos na hamburgueria Peppa Lanches" name="Pedido com desconto de 10 por cento" time="0.012"/>
+  <testcase classname="Pedidos na hamburgueria Peppa Lanches" name="Calcular tempo estimado de preparo" time="0.008"/>
 </testsuite>

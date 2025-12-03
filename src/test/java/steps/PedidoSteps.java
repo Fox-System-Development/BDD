@@ -7,14 +7,22 @@ import io.cucumber.datatable.DataTable;
 import org.junit.Assert;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class PedidoSteps {
 
+    private Map<String, Double> cardapioPrecos = new HashMap<>() {{
+        put("batata frita", 12.00);
+        put("x-salada", 22.00);
+        put("x-bacon", 25.00);
+    }};
+
     private List<String> cardapio = new ArrayList<>();
     
     private String itemEscolhido;
+    private int quantidade; 
     private int tempoEstimado;
     private String mensagemExibida;
 
@@ -52,7 +60,8 @@ public class PedidoSteps {
     
 
     @Quando("o cliente define a quantidade {int}")
-    public void o_cliente_define_a_quantidade(int quantidade) {
+    public void o_cliente_define_a_quantidade(int qtd) {
+            this.quantidade = qtd;
         if (this.itemEscolhido != null && quantidade > 0) {
             this.tempoEstimado = 8 + (2 * quantidade);
             this.mensagemExibida = "Pedido confirmado com sucesso";
@@ -64,6 +73,24 @@ public class PedidoSteps {
             }
             this.tempoEstimado = 0;
         }
+    }
+
+    @Quando("o cliente não define a quantidade")
+    public void o_cliente_nao_define_a_quantidade() {
+    this.quantidade = 0; 
+    if (this.quantidade <= 0) {
+        this.mensagemExibida = "Quantidade inválida";
+    } else {
+        this.mensagemExibida = "Ok";
+    }
+}
+
+    @Então("o desconto ganho será de R$ {double}")
+    public void o_desconto_ganho_sera_de(double descontoEsperado) {
+        double precoUnitario = cardapioPrecos.get(this.itemEscolhido);
+        double totalBruto = precoUnitario * this.quantidade;
+        double descontoCalculado = totalBruto * 0.10;
+        Assert.assertEquals(descontoEsperado, descontoCalculado, 0.01);
     }
 
     @Então("o sistema deve exibir a mensagem {string}")

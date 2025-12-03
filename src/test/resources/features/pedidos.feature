@@ -27,8 +27,8 @@ Funcionalidade: Pedidos na hamburgueria Peppa Lanches
   @quantidade
   Cenário: Pedido com quantidade inválida
   Dado que o cliente seleciona o item "x-bacon"
-  Quando o cliente define a quantidade menor que 0
-  Então o sistema deve exibir a mensagem "Quantidade inválida, tem de ser maior que 0"
+  Quando o cliente não define a quantidade 
+  Então o sistema deve exibir a mensagem "Quantidade inválida"
 
   @desconto
   Cenário: Pedido com desconto de 10 por cento

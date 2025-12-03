@@ -1,15 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: runner.RunnerTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.633 sec <<< FAILURE!
-Pedido de item inexistente(Pedidos na hamburgueria Peppa Lanches)  Time elapsed: 0.042 sec  <<< ERROR!
-io.cucumber.junit.UndefinedStepException: The step 'que o cliente procura por "Risoto"' is undefined.
-You can implement this step using the snippet(s) below:
-
-@Dado("que o cliente procura por {string}")
-public void queOClienteProcuraPor(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.538 sec
