@@ -26,11 +26,15 @@ Funcionalidade: Pedidos na hamburgueria Peppa Lanches
 
   @quantidade
   Cenário: Pedido com quantidade inválida
-  ...
+  Dado que o cliente seleciona o item "x-bacon"
+  Quando o cliente define a quantidade menor que 0
+  Então o sistema deve exibir a mensagem "Quantidade inválida, tem de ser maior que 0"
 
   @desconto
   Cenário: Pedido com desconto de 10 por cento
-  ...
+  Dado que o cliente seleciona o item "batata frita"
+  Quando o cliente define a quantidade 2
+  Então o desconto ganho será de R$ 2,40
   
   @sla
   Cenário: Calcular tempo estimado de preparo
